@@ -237,11 +237,7 @@ const submitButtom = document.querySelector('.submit-button');
    $('.cntact').on("click", function(e) {
      e.preventDefault();
      $('html, body').animate({
-<<<<<<< HEAD
-        scrollTop: $('#contact').offset().top + 36
-=======
         scrollTop: $('#contact').offset().top + 37
->>>>>>> 131fd071d932c8c882c68bf71b5c8db822fb092e
      }, 3000, 'swing');
    });
 
