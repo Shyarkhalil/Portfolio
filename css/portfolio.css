@@ -653,7 +653,6 @@ section h2 {
 
 .slide:hover .overlay-project{
   opacity: 1;
-  -khtml-opacity: 0.7;
 }
 
  .slide:hover img {
