@@ -88,7 +88,6 @@ body {
   0% {
      opacity: 0;
     -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
     -ms-transform: translateX(-20px);
     transform: translateX(-20px);
   }
@@ -96,7 +95,6 @@ body {
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
@@ -105,7 +103,6 @@ body {
    0% {
       opacity: 0;
      -webkit-transform: translateY(20px);
-     -moz-transform: translateY(20px);
      -ms-transform: translateY(20px);
      transform: translateY(20px);
    }
@@ -113,7 +110,6 @@ body {
    100% {
      opacity: 1;
      -webkit-transform: translateY(0);
-     -moz-transform: translateY(0);
      -ms-transform: translateY(0);
      transform: translateY(0);
    }
@@ -233,17 +229,11 @@ body {
 
 
 .close .line-one {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 
 .close .line:nth-of-type(1n+2){
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: -6px;
 }
@@ -271,9 +261,6 @@ body {
   top: 20%;
   right: 50%;
   color: rgb(88, 33, 7);
-  -webkit-transform: translate(50%, 50%);
-  -moz-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
   transform: translate(50%, 50%);
   width: calc(100%);
 }
@@ -320,18 +307,12 @@ body {
 /* Style arrow in the view peoject button */
 .fa-arrow-circle-right {
   padding: 4px;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
   transform: rotate(0deg);
   transition: transform .50s ease;
 }
 
 /* Change arrow direction on hover */
 .myproj-btn:hover .fa-arrow-circle-right {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -466,7 +447,6 @@ section {
     width: 150px;
     height: 150px;
     -ms-transform:  rotateY(-20deg);
-    -moz-transform:  rotateY(-20deg);
     -webkit-transform:  rotateY(-20deg);
     transform:  rotateY(-20deg);
     opacity: 0;
@@ -475,7 +455,6 @@ section {
 /* Give my image rotate on y axis  */
   .container .myImage {
     -ms-transform: translate3d(0px, 0px, 0px) rotateY(-20deg);
-    -moz-transform: translate3d(0px, 0px, 0px) rotateY(-20deg);
     -webkit-transform: translate3d(0px, 0px, 0px) rotateY(-20deg);
     transform: translate3d(0px, 0px, 0px) rotateY(-20deg);
     opacity: 0;
@@ -485,7 +464,6 @@ section {
 /* Give the my image show class to return it to the desir postion */
   .container .show-image.myImage {
    -ms-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
-   -moz-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
    -webkit-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
    transform: translate3d(0px, 0px, 0px) rotateY(0deg);
    opacity: 1;
@@ -512,7 +490,6 @@ section {
 
   .skills-icon.fadeY {
     -webkit-transform:  rotateY(0);
-    -moz-transform:  rotateY(0);
     -ms-transform:  rotateY(0);
     transform:  rotateY(0);
     opacity: 1;
@@ -540,7 +517,6 @@ section {
 
 .title-bar {
   -webkit-transform: translate3d(0px, -35px, 0px);
-  -moz-transform: translate3d(0px, -35px, 0px);
   -ms-transform: translate3d(0px, -35px, 0px);
   transform: translate3d(0px, -35px, 0px);
   opacity: 0;
@@ -564,7 +540,6 @@ section {
 
 .show-title.title-bar {
   -webkit-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
   -ms-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
@@ -573,7 +548,6 @@ section {
 
 .show-brief.my-brief{
   -webkit-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
   -ms-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
@@ -622,7 +596,6 @@ section h2 {
   width: 99.6%;
   height: 100%;
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38);
@@ -646,7 +619,6 @@ section h2 {
   align-items: center;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   transition: opacity .20s ease-out;
 }
@@ -658,7 +630,6 @@ section h2 {
  .slide:hover img {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  -moz-transform: scale(1.2);
    transform: scale(1.2);
 }
 
@@ -677,7 +648,6 @@ a:link{
   color: #fff;
   -webkit-transform: translateY(200px);
   -ms-transform: translateY(200px);
-  -moz-transform: translateY(200px);
   transform: translateY(200px);
   transition: transform .90s cubic-bezier(0.95, -0.49, 0.25, 1.46) .1s;
 }
@@ -685,7 +655,6 @@ a:link{
 .slide:hover .btn-project {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
-  -moz-transform: translateY(0px);
   transform: translateY(0px);
 }
 
@@ -772,7 +741,6 @@ a:link{
   background-color: #252934;
   -webkit-transform: translate3d(-1500px, 0px, 0px);
   -ms-transform: translate3d(-1500px, 0px, 0px);
-  -moz-transform: translate3d(-1500px, 0px, 0px);
   transform: translate3d(-1500px, 0px, 0px);
   transition: transform cubic-bezier(.76,0,.18,1) 0.6s;
   opacity: 0;
@@ -783,7 +751,6 @@ a:link{
 .fadeInContact.overlay-contact {
   -webkit-transform: translate3d(0px, 0px, 0px);
   -ms-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
 }
@@ -858,7 +825,6 @@ textarea[name="massage_me"] {
   cursor: pointer;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
-  -moz-transform: scale(1);
   transform: scale(1);
   transition: background-color 0.3s ease-out, transform 0.20s ease-out;
 }
@@ -877,8 +843,8 @@ textarea[name="massage_me"] {
 .fa-twitter-1, .fa-twitter-2, .fa-instagram-1, .fa-instagram-2, .fa-envelope-1, .fa-envelope-2{
   transition: all 0.3s cubic-bezier(0.4, 0.68, 0, 0.82);
   -webkit-transform: translate(-9px, 18px);
-  -ms-transform: translate(-9px, 18px);
   -moz-transform: translate(-9px, 18px);
+  -ms-transform: translate(-9px, 18px);
   transform: translate(-9px, 18px);
   position: absolute;
   text-decoration: none;
@@ -886,9 +852,6 @@ textarea[name="massage_me"] {
 }
 
 .fa-twitter-2, .fa-instagram-2, .fa-envelope-2 {
-  -webkit-transform: translate(-9px, -22px);
-  -ms-transform: translate(-9px, -22px);
-  -moz-transform: translate(-9px, -22px);
   transform: translate(-9px, -22px);
 }
 
@@ -896,26 +859,17 @@ textarea[name="massage_me"] {
 .snd-button:hover .fa-twitter-2,
 .snd-button:hover .fa-instagram-2,
 .snd-button:hover .fa-envelope-2{
-  -webkit-transform: translate(-9px, 18px);
-  -ms-transform: translate(-9px, 18px);
-  -moz-transform: translate(-9px, 18px);
    transform: translate(-9px, 18px);
 }
 
 .snd-button:hover .fa-twitter-1,
 .snd-button:hover .fa-instagram-1,
 .snd-button:hover .fa-envelope-1{
-  -webkit-transform: translate(-9px, 80px);
-  -ms-transform: translate(-9px, 80px);
-  -moz-transform: translate(-9px, 80px);
   transform: translate(-9px, 80px);
 }
 
 .snd-button:hover{
   background-color: #00d7fc;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
@@ -968,9 +922,6 @@ footer {
   border-bottom-right-radius: 75px;
   border-top-right-radius: 75px;
   position: relative;
-  -webkit-transform: translateX(-150px);
-  -ms-transform: translateX(-150px);
-  -moz-transform: translateX(-150px);
   transform: translateX(-150px);
   transition: transform .4s cubic-bezier(0, 0.82, 0.15, 0.96);
 }
@@ -984,9 +935,6 @@ footer {
 
 .instagram-svg, .twitter-svg, .github-svg{
   background-color: #accbff;
-  -webkit-transform: translateX(155px);
-  -moz-transform: translateX(155px);
-  -ms-transform: translateX(155px);
   transform: translateX(155px);
 }
 
@@ -1000,9 +948,6 @@ footer {
 
 .gmail-svg {
   background-color: #ffb3a6;
-  -webkit-transform: translateX(155px);
-  -ms-transform: translateX(155px);
-  -moz-transform: translateX(155px);
   transform: translateX(155px);
 }
 
@@ -1048,27 +993,18 @@ footer {
 }
 
 .gmail-fadeInX.gmail{
-  -ms-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
   background-color: #ff6347;
 }
 
 .github-fadeInX.github{
   background-color: rgba(97, 90, 90, 0.05);
-  -ms-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
 }
 
 
 .instagram-fadeInX.instagram, .twitter-fadeInX.twitter{
   background-color:#4285f4;
-  -ms-transform: translateX(-20px);
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
   transform: translateX(-20px);
 }
 
@@ -1147,18 +1083,12 @@ footer .footer-name {
       background-color: rgb(246, 140, 90);
       width: 13%;
       top: 0;
-      -moz-transform: translate(-200px, 0px);
-      -webkit-transform: translate(-200px, 0px);
-      -ms-transform: translate(-200px, 0px);
       transform: translate(-200px, 0px);
       transition: transform cubic-bezier(.76,0,.18,1) .50s;
   }
 
   #navigation.drop ul {
     top: 0;
-    -moz-transform:translate(0px, 0px);
-    -webkit-transform:translate(0px, 0px);
-      -ms-transform:translate(0px, 0px);
     transform: translate(0px, 0px);
   }
 /* Add transparent color to background color to be readed on all browsers */
@@ -1243,7 +1173,6 @@ footer .footer-name {
   0% {
      opacity: 0;
     -webkit-transform: translateX(40px);
-    -moz-transform: translateX(40px);
     -ms-transform: translateX(40px);
     transform: translateX(40px);
   }
@@ -1251,7 +1180,6 @@ footer .footer-name {
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(40px);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
@@ -1260,7 +1188,6 @@ footer .footer-name {
    0% {
       opacity: 0;
      -webkit-transform: translateX(-40px);
-     -moz-transform: translateX(-40px);
      -ms-transform: translateX(-40px);
      transform: translateX(-40px);
    }
@@ -1268,16 +1195,14 @@ footer .footer-name {
    100% {
      opacity: 1;
      -webkit-transform: translateX(0);
-     -moz-transform: translateX(0);
      -ms-transform: translateX(0);
      transform: translateX(0);
    }
   }
 
  .title, .my-brief {
-   -webkit-transform:translate3d(-135px, 0px, 0px);
-   -ms-transform:translate3d(-135px, 0px, 0px);
-   -moz-transform:translate3d(-135px, 0px, 0px);
+    -webkit-transform: translate3d(-135px, 0px, 0px);
+   -ms-transform: translate3d(-135px, 0px, 0px);
    transform: translate3d(-135px, 0px, 0px);
  }
 
@@ -1401,9 +1326,6 @@ footer .footer-name {
     background-color: rgba(0, 0, 0, 0.56);
     left: 50%;
     position: absolute;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
    .contact-img{
@@ -1472,18 +1394,12 @@ textarea[name="massage_me"] {
   justify-content:space-around;
   flex-wrap: wrap;
   align-items: center;
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  -moz-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
   font-size: 1.8rem;
   transition: background-color .35s ease .40s, transform .60s cubic-bezier(0.54, 0.03, 0.21, 0.88), box-shadow .60s ease .30s;
 }
 
   #navigation .hide-nav.nav-ul {
-    -webkit-transform:translate(0px, -150px);
-    -ms-transform:translate(0px, -150px);
-    -moz-transform:translate(0px, -150px);
     transform: translate(0px, -150px);
   }
 
