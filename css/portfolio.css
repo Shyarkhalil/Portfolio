@@ -303,7 +303,7 @@ body {
   padding-left: 16px;
   align-items: center;
   cursor: pointer;
-  background-color: #0000;
+  background-color: transparent;
   -webkit-transition-property: background-color;
   -webkit-transition-duration: .50s;
   transition: background-color .50s;
@@ -311,7 +311,7 @@ body {
 
 /* Style arrow in the view peoject button */
 .fa-arrow-circle-right {
-  padding: 4px;
+  padding: 10px;
   transform: rotate(0deg);
   -webkit-transition-property: transform;
   -webkit-transition-duration: .50s;
@@ -629,7 +629,9 @@ section h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -moz-transition: opacity .20s ease-out;
-  transition: opacity .20s ease-out;
+  transition-property: opacity;
+  transition-duration: .20s;
+  transition-timing-function: ease-out;
 }
 
 .slide:hover .overlay-project{
@@ -658,7 +660,10 @@ a:link{
   -webkit-transform: translateY(200px);
   -ms-transform: translateY(200px);
   transform: translateY(200px);
-  transition: transform .90s cubic-bezier(0.95, -0.49, 0.25, 1.46) .1s;
+  transition-property: transform;
+  transition-duration: .90s;
+  transition-timing-function: cubic-bezier(0.95, -0.49, 0.25, 1.46);
+  transition-delay: .1s;
 }
 
 .slide:hover .btn-project {
@@ -729,7 +734,7 @@ a:link{
   border: 2px solid #252a30;
   border-radius: 28px;
   height: 50px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   -webkit-transition-property: all;
   -webkit-transition-duration: .70s;
