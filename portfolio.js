@@ -120,7 +120,6 @@ var startScroll = 0;
 
       var wScrollTop = $(this).scrollTop();
       var contactOffset = $('.contact-me').offset().top - 300;
-      var navTop = $(navigation).offset().top + 50;
       var sectionOne = $('.section-one').offset().top - 300;
       var sectionTwo = $('.section-two').offset().top - 300;
       var sectionThree = $('.section-three').offset().top - 300;

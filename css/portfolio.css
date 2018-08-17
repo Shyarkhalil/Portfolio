@@ -535,7 +535,7 @@ section {
 
 
 .my-brief p{
-  box-shadow: 0px 1px 6px 1px #e5aa7657;
+  box-shadow: 0px 1px 6px 1px #edc26b;
   font-size: 1rem;
   font-weight: 400;
   padding: 10px;
@@ -588,7 +588,7 @@ section {
 }
 
 section h2 {
-  color: #ff6347;
+  color: #1e242c;
   margin-bottom: 10px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -1290,7 +1290,7 @@ footer .footer-name {
     text-align: left;
     padding: 5px 0 0 16px;
     line-height: 2.2;
-    color: #252a30d1;
+    color: #565a5f;
     font-size: .80rem;
   }
 
@@ -1326,7 +1326,7 @@ footer .footer-name {
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.15);
     border: none;
     border-radius: 0;
-    color: #594747e8;
+    color: #582107;
     background-color: #fff;
   }
 
