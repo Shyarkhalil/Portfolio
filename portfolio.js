@@ -1,40 +1,33 @@
 
 
-const menu = document.getElementById('menu');
-const navigation = document.getElementById('navigation');
-const navUl = document.querySelector(".nav-ul");
-const containerDiv = document.querySelector(".container");
-const myImage = document.querySelector(".container img");
-const skills = document.getElementsByClassName('skills-icon');
-const barTitle = document.querySelector(".title-bar");
-const myBrief = document.querySelector(".my-brief");
+var menu = document.getElementById('menu');
+var navigation = document.getElementById('navigation');
+var navUl = document.querySelector(".nav-ul");
+var skills = document.getElementsByClassName('skills-icon');
 
-const gmailSvg = document.querySelector(".gmail-svg");
-const gmail = document.querySelector(".gmail");
-const gmailPath = document.querySelector(".gmail-path");
+var gmailSvg = document.querySelector(".gmail-svg");
+var gmail = document.querySelector(".gmail");
+var gmailPath = document.querySelector(".gmail-path");
 
-const instagramSvg = document.querySelector(".instagram-svg");
-const instagram = document.querySelector(".instagram");
-const instagramPath = document.querySelector(".instagram-path");
-const instagramPathOne = document.querySelector(".instagram-path-1");
-const instagramPathTwo = document.querySelector(".instagram-path-2");
+var instagramSvg = document.querySelector(".instagram-svg");
+var instagram = document.querySelector(".instagram");
+var instagramPath = document.querySelector(".instagram-path");
+var instagramPathOne = document.querySelector(".instagram-path-1");
+var instagramPathTwo = document.querySelector(".instagram-path-2");
 
 
-const twitterSvg = document.querySelector(".twitter-svg");
-const twitter = document.querySelector(".twitter");
-const twitterPath = document.querySelector(".twitter-path");
+var twitterSvg = document.querySelector(".twitter-svg");
+var twitter = document.querySelector(".twitter");
+var twitterPath = document.querySelector(".twitter-path");
 
-const githubSvg = document.querySelector(".github-svg");
-const github = document.querySelector(".github");
-const githubPath = document.querySelector(".github-path");
+var githubSvg = document.querySelector(".github-svg");
+var github = document.querySelector(".github");
+var githubPath = document.querySelector(".github-path");
 
-const arrow = document.querySelector(".arrow");
-const contactSection = document.querySelector(".contact-me");
-const socialMedia = document.querySelector(".social-icons a");
 
 // Add class close to the menu element. This handler will check if menu has the class close or not
 //If it has the class, the class will be removed and the navigation will hide. else the navigation will drop down.
-menu.addEventListener("click", () => {
+menu.addEventListener("click", function() {
   if (menu.className === "close" && navigation.className === "drop") {
        menu.removeAttribute("class");
        navigation.removeAttribute("class");
@@ -46,9 +39,9 @@ menu.addEventListener("click", () => {
 
 // Add active class to each nav link, so the handler targets specific elements.
 // If the element already has the class active will be removed and the targeted element will get the active class.
-navUl.addEventListener("mouseover", (e) => {
-  let element = e.target;
-  let ulChild = navUl.children;
+navUl.addEventListener("mouseover", function(e){
+  var element = e.target;
+  var ulChild = navUl.children;
   if (element.className === "about" || element.className === "projects" || element.className === "cntact") {
     for (var i = 0; i < ulChild.length; i++) {
       ulChild[i].classList.remove("active");
@@ -59,10 +52,10 @@ navUl.addEventListener("mouseover", (e) => {
 
 
 //This variabl will be added in p element each 50 milliseconds by setInterval function.
-let testTitle = "Hi, my name is Shyar and I am a Front End Web Developer with experience in JavaScript, HTML, CSS, SASS, Git and Github, a JavaScript library React and iQuery. I am a conscientious person who works hard, is flexible, quick to pick up new skills, eager to learn from others, loves and has a passion for technology. I'm looking forward to showing you some of my projects and I believe we can bring your ideas to life together. :)"
+var testTitle = "Hi, my name is Shyar and I am a Front End Web Developer with experience in JavaScript, HTML, CSS, SASS, Git and Github, a JavaScript library React and iQuery. I am a conscientious person who works hard, is flexible, quick to pick up new skills, eager to learn from others, loves and has a passion for technology. I'm looking forward to showing you some of my projects and I believe we can bring your ideas to life together. :)";
 
 // Assign i to 0 index to start from the first litter in the string above and increment by one each time function is called.
-i = 0;
+var i = 0;
 
 
 
@@ -77,9 +70,9 @@ i = 0;
 // Stop the function from runing, by comparing the i with testTitle length in if statment.
 // The testTitle length is 352 and because the index number starts from 0 the number will be 351 if we don't decrement testTitle.length by 1
 // we will end up with undefined.
-let setTypeWriter = ()=> {
-    setTimeout( () => {
-    let typeWriter = setInterval(() => {
+var setTypeWriter = function(){
+    setTimeout( function () {
+    var typeWriter = setInterval(function(){
       document.querySelector('.about-me p').textContent += testTitle[i];
       i++;
       if (i > testTitle.length - 1) {
@@ -106,7 +99,7 @@ window.onload = function(){
     $(navUl).addClass("sticky-nav");
   }
   $('.about').addClass("active");
-}
+};
 
 
 
@@ -144,10 +137,13 @@ var startScroll = 0;
          $('.my-brief').addClass("show-brief");
        }
 
-       if (wScrollTop > startScroll) $(navUl).addClass("hide-nav"),
-                                     $(navUl).addClass("sticky-nav");
-       else  $(navUl).removeClass("hide-nav");
-       if (wScrollTop == 0) $(navUl).removeClass("sticky-nav");
+       if (wScrollTop > startScroll){
+         $(navUl).addClass("hide-nav");
+         $(navUl).addClass("sticky-nav");
+       } else {
+         $(navUl).removeClass("hide-nav");
+       }
+       if (wScrollTop === 0) $(navUl).removeClass("sticky-nav");
        startScroll = wScrollTop;
        if (wScrollTop > aboutMe) {
          $(skills).addClass("fadeY");
@@ -183,14 +179,14 @@ var startScroll = 0;
 // When submit button is clicked  the message will be added to p element.
 //Use DOM to create, append, create child, then make a button disabled on submit. Then make it abled when closin window.
 
-const submitButtom = document.querySelector('.submit-button');
+var submitButtom = document.querySelector('.submit-button');
 
-  submitButtom.addEventListener("click", (e) => {
+  submitButtom.addEventListener("click", function (e)  {
     e.preventDefault();
-    const errorMessage = document.querySelector('.error-message');
-    const userTextArea = document.getElementById('user_message');
-    const userName = document.getElementById('name');
-    let p = document.createElement("p");
+    var errorMessage = document.querySelector('.error-message');
+    var userTextArea = document.getElementById('user_message');
+    var userName = document.getElementById('name');
+    var p = document.createElement("p");
           p.className = "error_title";
           p.textContent = "Oops! Your message will not be sent! If you want to connect me, please click on one of the icons below.";
           errorMessage.appendChild(p);
@@ -199,9 +195,9 @@ const submitButtom = document.querySelector('.submit-button');
           errorMessage.classList.add("error-shake");
           submitButtom.disabled = true;
 
-          const close = document.querySelector('.close-overlay');
+          var close = document.querySelector('.close-overlay');
 
-          close.addEventListener("click", (e) => {
+          close.addEventListener("click", function(e){
               p.style.display = "none";
               submitButtom.disabled = false;
           });
@@ -288,31 +284,31 @@ var typed = new Typed("#typed", {
 
 
 //Social Media icons, using object to add and remove classes
-const actionClass =  {
-   add: (property, className) => {
+var actionClass =  {
+   add: function (property, className){
      property.classList.add(className);
    },
-   remove : (property, className) => {
+   remove : function (property, className) {
     property.classList.remove(className);
    }
 };
 
 
 
-const RemoveClasses = (property, className) => {
+var RemoveClasses = function (property, className){
    actionClass.remove(property, className);
-}
+};
 
-const addClasses = (property, className) => {
+var addClasses = function (property, className){
    actionClass.add(property, className);
-}
+};
 
 
 
 
 //Add class to instagram ad remove
 
-instagram.addEventListener("mouseover", (e) =>{
+instagram.addEventListener("mouseover", function (){
   addClasses(instagram, "instagram-fadeInX");
   addClasses(instagramSvg, "instagram-color");
   addClasses(instagramPath, "instagram-path-color");
@@ -323,7 +319,7 @@ instagram.addEventListener("mouseover", (e) =>{
 
 
 
-instagram.addEventListener("mouseout", () =>{
+instagram.addEventListener("mouseout", function (){
   RemoveClasses(instagram, "instagram-fadeInX");
   RemoveClasses(instagramSvg, "instagram-color");
   RemoveClasses(instagramPath, "instagram-path-color");
@@ -334,7 +330,7 @@ instagram.addEventListener("mouseout", () =>{
 
 
 // Add classes to gmail and remove
-gmail.addEventListener("mouseover", (e) =>{
+gmail.addEventListener("mouseover", function (){
   addClasses(gmail, "gmail-fadeInX");
   addClasses(gmailSvg, "gmail-color");
   addClasses(gmailPath, "gmail-path-color");
@@ -342,7 +338,7 @@ gmail.addEventListener("mouseover", (e) =>{
 
 
 
-gmail.addEventListener("mouseout", () =>{
+gmail.addEventListener("mouseout", function (){
   RemoveClasses(gmail, "gmail-fadeInX");
   RemoveClasses(gmailSvg, "gmail-color");
   RemoveClasses(gmailPath, "gmail-path-color");
@@ -351,7 +347,7 @@ gmail.addEventListener("mouseout", () =>{
 
 
 // Add classes to twitter and remove
-twitter.addEventListener("mouseover", (e) =>{
+twitter.addEventListener("mouseover", function (){
   addClasses(twitter, "twitter-fadeInX");
   addClasses(twitterSvg, "twitter-color");
   addClasses(twitterPath, "twitter-path-color");
@@ -359,7 +355,7 @@ twitter.addEventListener("mouseover", (e) =>{
 
 
 
-twitter.addEventListener("mouseout", () =>{
+twitter.addEventListener("mouseout", function (){
   RemoveClasses(twitter, "twitter-fadeInX");
   RemoveClasses(twitterSvg, "twitter-color");
   RemoveClasses(twitterPath, "twitter-path-color");
@@ -370,7 +366,7 @@ twitter.addEventListener("mouseout", () =>{
 // Add classes to github and remove
 
 
-github.addEventListener("mouseover", (e) =>{
+github.addEventListener("mouseover", function (){
 
   addClasses(github, "github-fadeInX");
   addClasses(githubSvg, "github-color");
@@ -379,7 +375,7 @@ github.addEventListener("mouseover", (e) =>{
 
 
 
-github.addEventListener("mouseout", () =>{
+github.addEventListener("mouseout", function (){
   RemoveClasses(github, "github-fadeInX");
   RemoveClasses(githubSvg, "github-color");
   RemoveClasses(githubPath, "github-path-color");
