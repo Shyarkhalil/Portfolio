@@ -218,7 +218,7 @@ var submitButtom = document.querySelector('.submit-button');
    $('.about').on("click", function(e) {
      e.preventDefault();
      $('html, body').animate({
-        scrollTop: $('#about').offset().top -90
+        scrollTop: $('#about').offset().top + 2
      }, 3000, 'swing');
    });
 
@@ -232,7 +232,7 @@ var submitButtom = document.querySelector('.submit-button');
    $('.cntact').on("click", function(e) {
      e.preventDefault();
      $('html, body').animate({
-        scrollTop: $('#contact').offset().top + 32
+        scrollTop: $('#contact').offset().top
      }, 3000, 'swing');
    });
 
@@ -262,7 +262,7 @@ var submitButtom = document.querySelector('.submit-button');
       $('.overlay-contact').removeClass("fadeInContact");
    });
 
- });
+ });// end of the ready func
 
 
 
@@ -276,6 +276,7 @@ var typed = new Typed("#typed", {
   stringsElement: '#typed-strings',
   typeSpeed: 60,
   backSpeed: 800,
+  cursorChar: '_',
   fadeOut: true,
   smartBackspace: true,
   loop: true
