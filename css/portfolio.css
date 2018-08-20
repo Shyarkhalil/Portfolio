@@ -178,7 +178,7 @@ body {
 .main-header {
   height: 88vh;
   width: 100%;
-  background-image: url(../img/application-calculator.jpg);
+  background-image: url("../img/application-calculator.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
