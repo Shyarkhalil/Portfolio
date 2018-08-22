@@ -185,7 +185,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+/*   background-attachment: fixed; */
 }
 
 .nav-img {
