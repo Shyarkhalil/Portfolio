@@ -176,7 +176,7 @@ body {
   =======================================================*/
 
 .main-header {
-  height: 88vh;
+  height: 89vh;
   width: 100%;
   background-image: url("../img/application-calculator.png");
   background-repeat: no-repeat;
@@ -185,7 +185,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-/*   background-attachment: fixed; */
 }
 
 .nav-img {
@@ -264,7 +263,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 20%;
+  top: 21%;
   right: 50%;
   color: rgb(88, 33, 7);
   transform: translate(50%, 50%);
@@ -272,7 +271,7 @@ body {
 }
 
 .centering-overlay-elements p {
-  margin-top: 0;
+  margin: 0;
 }
 
 
@@ -589,7 +588,7 @@ section {
 
 
 section {
-  color: #93a4aa;
+  color: #6b787d;
   text-align: center;
 }
 
@@ -1104,6 +1103,7 @@ footer .footer-name {
   .main-header {
     margin-top: 0;
     height: 66vh;
+    background-attachment: fixed;
   }
 
 
