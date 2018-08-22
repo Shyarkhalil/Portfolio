@@ -178,10 +178,13 @@ body {
 .main-header {
   height: 88vh;
   width: 100%;
-  background-image: url(../img/application-calculator.jpg);
+  background-image: url("../img/application-calculator.png");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: center center;
   background-attachment: fixed;
 }
 
@@ -388,8 +391,9 @@ li.active {
   height: 300px;
   width: 300px;
   display: block;
-  margin: 4px auto 0;
+  margin: 0 auto;
 }
+
 
 .title, .my-brief {
  opacity: 0;
@@ -487,6 +491,7 @@ section {
 
   .icon-3 {
     transition: transform .40s ease-in 1.70s, opacity .30s ease-in 1.70s;
+    margin: 10px 0 0 -26px;
   }
 
   .icon-4 {
@@ -535,10 +540,11 @@ section {
 
 
 .my-brief p{
-  box-shadow: 0px 1px 6px 1px #e5aa7657;
+  box-shadow: 0px 1px 6px 1px #edc26b;
   font-size: 1rem;
   font-weight: 400;
   padding: 10px;
+  height: 64vh;
   line-height: 28px;
   text-align: left;
   z-index: 600;
@@ -588,7 +594,7 @@ section {
 }
 
 section h2 {
-  color: #252a30;
+  color: #1e242c;
   margin-bottom: 10px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -616,6 +622,7 @@ section h2 {
 }
 .overlay-project{
   opacity: 0;
+  visibility: hidden;
   background-color: rgba(0, 0, 0, 0.51);
   width: 100%;
   height: 100%;
@@ -629,6 +636,9 @@ section h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -moz-transition: opacity .20s ease-out;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .20s;
+   -webkit-transition-timing-function: ease-out;
   transition-property: opacity;
   transition-duration: .20s;
   transition-timing-function: ease-out;
@@ -636,6 +646,7 @@ section h2 {
 
 .slide:hover .overlay-project{
   opacity: 1;
+  visibility: visible;
 }
 
  .slide:hover img {
@@ -660,6 +671,10 @@ a:link{
   -webkit-transform: translateY(200px);
   -ms-transform: translateY(200px);
   transform: translateY(200px);
+  -webkit-transition-property:  transform;
+  -webkit-transition-duration: .90s;
+  -webkit-transition-timing-function: cubic-bezier(0.95, -0.49, 0.25, 1.46);
+  -webkit-transition-delay: .1s;
   transition-property: transform;
   transition-duration: .90s;
   transition-timing-function: cubic-bezier(0.95, -0.49, 0.25, 1.46);
@@ -1161,6 +1176,22 @@ footer .footer-name {
   }
   .myImage {
     height: 317px;
+    margin: 0;
+  }
+
+
+  .skills-icon {
+      width: 100px;
+      height: 100px;
+    }
+
+ .icon-3 {
+  margin: 0;
+ }
+  .icon-4 {
+   margin-left: 10px;
+   width: 80px;
+   height: 90px;
   }
 
  body {
@@ -1290,7 +1321,7 @@ footer .footer-name {
     text-align: left;
     padding: 5px 0 0 16px;
     line-height: 2.2;
-    color: #252a30d1;
+    color: #565a5f;
     font-size: .80rem;
   }
 
@@ -1326,7 +1357,7 @@ footer .footer-name {
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.15);
     border: none;
     border-radius: 0;
-    color: #594747e8;
+    color: #582107;
     background-color: #fff;
   }
 
@@ -1347,16 +1378,13 @@ footer .footer-name {
   }
    .contact-img{
       height: 40vh;
-      background-image: url(../img/application-calculator.jpg);
+      background-image: url(../img/application-calculator.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
    }
 
-  .icon-4 {
-    margin-left: 10px;
-  }
  .arrow-svg {
    left: 48%;
  }
