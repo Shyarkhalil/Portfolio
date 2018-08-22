@@ -263,7 +263,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 17%;
+  top: 19%;
   right: 50%;
   color: rgb(88, 33, 7);
   transform: translate(50%, 50%);
@@ -271,7 +271,7 @@ body {
 }
 
 .centering-overlay-elements p {
-  margin-top: 0;
+  margin: 0;
 }
 
 
