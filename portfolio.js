@@ -52,7 +52,7 @@ navUl.addEventListener("mouseover", function(e){
 
 
 //This variabl will be added in p element each 50 milliseconds by setInterval function.
-var testTitle = "Hi, my name is Shyar and I am a Front End Web Developer with experience in JavaScript, HTML, CSS, SASS, Git and Github, a JavaScript library React and jQuery. I am a conscientious person who works hard, is flexible, quick to pick up new skills, eager to learn from others, loves and has a passion for technology. I'm looking forward to showing you some of my projects and I believe we can bring your ideas to life together. :)";
+var testTitle = "Hi, my name is Shyar and I am a Front End Web Developer with experience in JavaScript, HTML, CSS, SASS, Git and Github, a JavaScript library React and jQuery. I'm looking forward to showing you some of my projects and I believe we can bring your ideas to life together. :)";
 
 // Assign i to 0 index to start from the first litter in the string above and increment by one each time function is called.
 var i = 0;
